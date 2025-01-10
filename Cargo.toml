@@ -6,9 +6,9 @@ authors = ["Priyadarshan Giri <me@giripriyadarshan.com>"]
 categories = ["command-line-utilities", "template-engine"]
 description = "A CLI tool to create directory structure using ASCII tree."
 license = "MIT"
-homepage = ""
-readme = ""
-repository = ""
+homepage = "https://github.com/giripriyadarshan/project-structure-creator"
+readme = "README.md"
+repository = "https://github.com/giripriyadarshan/project-structure-creator"
 keywords = ["cli", "ASCII", "directory"]
 
 [dependencies]
