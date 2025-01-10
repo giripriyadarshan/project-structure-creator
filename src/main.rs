@@ -34,8 +34,10 @@ fn main() {
             continue;
         }
 
-        let depth = line.chars().filter(|&c| c == '│').count() + line.chars().filter(|&c| c == '├').count() + line.chars().filter(|&c| c == '└').count();
-        
+        let depth = line.chars().filter(|&c| c == '│').count()
+            + line.chars().filter(|&c| c == '├').count()
+            + line.chars().filter(|&c| c == '└').count();
+
         let clean_line = line
             .replace("├", "")
             .replace("└", "")
@@ -61,13 +63,11 @@ fn main() {
                 println!("Created directory: {}", full_path.display());
             }
         } else if !full_path.exists() {
-                if let Some(parent) = full_path.parent() {
-                    fs::create_dir_all(parent).unwrap();
-                }
-                fs::File::create(&full_path).unwrap();
-                println!("Created file: {}", full_path.display());
+            if let Some(parent) = full_path.parent() {
+                fs::create_dir_all(parent).unwrap();
             }
-        
+            fs::File::create(&full_path).unwrap();
+            println!("Created file: {}", full_path.display());
+        }
     }
 }
-

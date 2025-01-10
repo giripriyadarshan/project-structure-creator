@@ -2,6 +2,14 @@
 name = "project-structure-creator"
 version = "0.1.0"
 edition = "2021"
+authors = ["Priyadarshan Giri <me@giripriyadarshan.com>"]
+categories = ["command-line-utilities", "template-engine"]
+description = "A CLI tool to create directory structure using ASCII tree."
+license = "MIT"
+homepage = ""
+readme = ""
+repository = ""
+keywords = ["cli", "ASCII", "directory"]
 
 [dependencies]
 clap = { version = "4.5.26", features = ["derive"] }
